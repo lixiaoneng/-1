@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书籍音频配套网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+        }
+        .book-cover {
+            width: 100%;
+        }
+        .book-title {
+            font-size: 24px;
+            margin: 20px 0;
+            text-align: center;
+            color: #333;
+        }
+        .audio-list {
+            list-style: none;
+            padding: 0;
+        }
+        .audio-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .audio-player {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/Users/linxiaomeng/Desktop/book-audio-website/book-cover.jpg" alt="书籍封面" class="book-cover">
+        <div class="book-title">书名</div>
+        <ul class="audio-list">
+            <li onclick="playAudio('01.北冰洋 Les sons de l’océan Arctique 音频已提取.wav')">01.北冰洋</li>
+            <li onclick="playAudio('02.北极海鹦 Le macareux moine 音频已提取.wav')">02.北极海鹦</li>
+ <li onclick="playAudio('03.海豹 le phoque 音频已提取.wav')">03.海豹</li>
+            <!-- 添加更多音频文件 -->
+        </ul>
+        <audio class="audio-player" controls>
+            <source id="audioSource" src="" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+    <script>
+        function playAudio(src) {
+            var audio = document.querySelector('.audio-player');
+            var source = document.getElementById('audioSource');
+            source.src = src;
+            audio.load();
+            audio.play();
+        }
+    </script>
+</body>
+</html>
