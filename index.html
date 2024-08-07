@@ -14,9 +14,9 @@
     <meta property="og:type" content="website">
 
     <!-- WeChat Specific Meta Tags -->
-    <meta name="weibo:article:title" content="《你好，大自然的声音》之冰川上的避风塘">
-    <meta name="weibo:article:description" content="包含23个自然声音的音频文件。">
-    <meta name="weibo:article:image" content="https://lixiaoneng.github.io/-1/封面.jpg">
+    <meta name="wechat:title" content="《你好，大自然的声音》之冰川上的避风塘">
+    <meta name="wechat:description" content="包含23个自然声音的音频文件。">
+    <meta name="wechat:image" content="https://lixiaoneng.github.io/-1/封面.jpg">
 
     <style>
         body {
@@ -49,6 +49,9 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .audio-item:hover {
             background-color: #eef;
@@ -56,6 +59,7 @@
         .audio-player {
             margin-top: 10px;
             display: none;
+            width: 100%;
         }
     </style>
 </head>
@@ -66,196 +70,210 @@
         <ul class="audio-list">
             <li class="audio-item">
                 <p>01.北冰洋</p>
-                <button onclick="playAudio(this, '01.北冰洋.wav')">播放</button>
+                <button onclick="playAudio(this, '01.北冰洋.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="01.北冰洋.wav" type="audio/wav">
+                    <source src="01.北冰洋.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>02.北极海鹦</p>
-                <button onclick="playAudio(this, '02.北极海鹦.wav')">播放</button>
+                <button onclick="playAudio(this, '02.北极海鹦.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="02.北极海鹦.wav" type="audio/wav">
+                    <source src="02.北极海鹦.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>03.海豹</p>
-                <button onclick="playAudio(this, '03.海豹.wav')">播放</button>
+                <button onclick="playAudio(this, '03.海豹.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="03.海豹.wav" type="audio/wav">
+                    <source src="03.海豹.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>04.企鹅</p>
-                <button onclick="playAudio(this, '04.企鹅.wav')">播放</button>
+                <button onclick="playAudio(this, '04.企鹅.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="04.企鹅.wav" type="audio/wav">
+                    <source src="04.企鹅.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>05.北极狐</p>
-                <button onclick="playAudio(this, '05.北极狐.wav')">播放</button>
+                <button onclick="playAudio(this, '05.北极狐.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="05.北极狐.wav" type="audio/wav">
+                    <source src="05.北极狐.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>06.驯鹿</p>
-                <button onclick="playAudio(this, '06.驯鹿.wav')">播放</button>
+                <button onclick="playAudio(this, '06.驯鹿.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="06.驯鹿.wav" type="audio/wav">
+                    <source src="06.驯鹿.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>07.风</p>
-                <button onclick="playAudio(this, '07.风.wav')">播放</button>
+                <button onclick="playAudio(this, '07.风.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="07.风.wav" type="audio/wav">
+                    <source src="07.风.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>08.瀑布</p>
-                <button onclick="playAudio(this, '08.瀑布.wav')">播放</button>
+                <button onclick="playAudio(this, '08.瀑布.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="08.瀑布.wav" type="audio/wav">
+                    <source src="08.瀑布.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>09.雪鸮</p>
-                <button onclick="playAudio(this, '09.雪鸮.wav')">播放</button>
+                <button onclick="playAudio(this, '09.雪鸮.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="09.雪鸮.wav" type="audio/wav">
+                    <source src="09.雪鸮.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>10.北极狐的呼唤</p>
-                <button onclick="playAudio(this, '10.北极狐的呼唤.wav')">播放</button>
+                <button onclick="playAudio(this, '10.北极狐的呼唤.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="10.北极狐的呼唤.wav" type="audio/wav">
+                    <source src="10.北极狐的呼唤.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>11.崩塌</p>
-                <button onclick="playAudio(this, '11.崩塌.wav')">播放</button>
+                <button onclick="playAudio(this, '11.崩塌.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="11.崩塌.wav" type="audio/wav">
+                    <source src="11.崩塌.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>12.独角鲸</p>
-                <button onclick="playAudio(this, '12.独角鲸.wav')">播放</button>
+                <button onclick="playAudio(this, '12.独角鲸.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="12.独角鲸.wav" type="audio/wav">
+                    <source src="12.独角鲸.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>13.北极熊</p>
-                <button onclick="playAudio(this, '13.北极熊.wav')">播放</button>
+                <button onclick="playAudio(this, '13.北极熊.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="13.北极熊.wav" type="audio/wav">
+                    <source src="13.北极熊.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>14.暴风雪</p>
-                <button onclick="playAudio(this, '14.暴风雪.wav')">播放</button>
+                <button onclick="playAudio(this, '14.暴风雪.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="14.暴风雪.wav" type="audio/wav">
+                    <source src="14.暴风雪.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>15.火山爆发</p>
-                <button onclick="playAudio(this, '15.火山爆发.wav')">播放</button>
+                <button onclick="playAudio(this, '15.火山爆发.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="15.火山爆发.wav" type="audio/wav">
+                    <source src="15.火山爆发.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>16.赤颈鸭</p>
-                <button onclick="playAudio(this, '16.赤颈鸭.wav')">播放</button>
+                <button onclick="playAudio(this, '16.赤颈鸭.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="16.赤颈鸭.wav" type="audio/wav">
+                    <source src="16.赤颈鸭.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>17.海鸥</p>
-                <button onclick="playAudio(this, '17.海鸥.wav')">播放</button>
+                <button onclick="playAudio(this, '17.海鸥.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="17.海鸥.wav" type="audio/wav">
+                    <source src="17.海鸥.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>18.海象</p>
-                <button onclick="playAudio(this, '18.海象.wav')">播放</button>
+                <button onclick="playAudio(this, '18.海象.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="18.海象.wav" type="audio/wav">
+                    <source src="18.海象.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>19.碎冰</p>
-                <button onclick="playAudio(this, '19.碎冰.wav')">播放</button>
+                <button onclick="playAudio(this, '19.碎冰.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="19.碎冰.wav" type="audio/wav">
+                    <source src="19.碎冰.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>20.绵羊</p>
-                <button onclick="playAudio(this, '20.绵羊.wav')">播放</button>
+                <button onclick="playAudio(this, '20.绵羊.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="20.绵羊.wav" type="audio/wav">
+                    <source src="20.绵羊.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>21.野马</p>
-                <button onclick="playAudio(this, '21.野马.wav')">播放</button>
+                <button onclick="playAudio(this, '21.野马.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="21.野马.wav" type="audio/wav">
+                    <source src="21.野马.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>22.一群北极海鹦</p>
-                <button onclick="playAudio(this, '22.一群北极海鹦.wav')">播放</button>
+                <button onclick="playAudio(this, '22.一群北极海鹦.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="22.一群北极海鹦.wav" type="audio/wav">
+                    <source src="22.一群北极海鹦.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
             <li class="audio-item">
                 <p>23.山谷</p>
-                <button onclick="playAudio(this, '23.山谷.wav')">播放</button>
+                <button onclick="playAudio(this, '23.山谷.mp3')">播放</button>
                 <audio controls class="audio-player">
-                    <source src="23.山谷.wav" type="audio/wav">
+                    <source src="23.山谷.mp3" type="audio/mpeg">
                     您的浏览器不支持音频元素。
                 </audio>
             </li>
         </ul>
     </div>
     <script>
+        let currentAudio = null;
+
         function playAudio(button, src) {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.style.display = 'none';
+            }
+
             const audioPlayer = button.nextElementSibling;
-            audioPlayer.src = src;
-            audioPlayer.style.display = 'block';
-            audioPlayer.play();
+            if (audioPlayer.src.endsWith(src)) {
+                audioPlayer.style.display = 'block';
+                audioPlayer.play();
+            } else {
+                audioPlayer.src = src;
+                audioPlayer.style.display = 'block';
+                audioPlayer.play();
+            }
+
+            currentAudio = audioPlayer;
         }
     </script>
 </body>
