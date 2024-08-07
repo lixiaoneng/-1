@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>冰川上的避风塘</title>
+    <title>你好，大自然的声音之冰川上的避风塘</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+            background-color: white;
+            color: black;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,77 +16,232 @@
             align-items: center;
         }
         .container {
-            max-width: 600px;
-            width: 100%;
-            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
         }
         .book-cover {
-            width: 100%;
-        }
-        .book-title {
-            font-size: 24px;
-            margin: 20px 0;
-            text-align: center;
-            color: #333;
+            max-width: 100%;
+            height: auto;
         }
         .audio-list {
             list-style: none;
             padding: 0;
         }
-        .audio-list li {
-            margin-bottom: 10px;
+        .audio-item {
+            margin: 10px 0;
             padding: 10px;
-            background-color: #e0f7fa;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        .audio-item:hover {
+            background-color: #eef;
         }
         .audio-player {
-            width: 100%;
-            margin-top: 20px;
+            margin-top: 10px;
+            display: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="book-cover.jpg" alt="书籍封面" class="book-cover">
-        <div class="book-title">书名</div>
+        <img src="封面.jpg" alt="书的封面" class="book-cover">
+        <h1>冰川上的避风塘</h1>
         <ul class="audio-list">
-            <li onclick="playAudio('01.北冰洋.wav')">01. 北冰洋</li>
-            <li onclick="playAudio('02.北极海鹦.wav')">02. 北极海鹦</li>
-            <li onclick="playAudio('03.海豹.wav')">03. 海豹</li>
-            <li onclick="playAudio('04.企鹅.wav')">04. 企鹅</li>
-            <li onclick="playAudio('05.北极狐.wav')">05. 北极狐</li>
-            <li onclick="playAudio('06.驯鹿.wav')">06. 驯鹿</li>
-            <li onclick="playAudio('07.风.wav')">07. 风</li>
-            <li onclick="playAudio('08.瀑布.wav')">08. 瀑布</li>
-            <li onclick="playAudio('09.雪鸮.wav')">09. 雪鸮</li>
-            <li onclick="playAudio('10.北极狐的呼唤.wav')">10. 北极狐的呼唤</li>
-            <li onclick="playAudio('11.崩塌.wav')">11. 崩塌</li>
-            <li onclick="playAudio('12.独角鲸.wav')">12. 独角鲸</li>
-            <li onclick="playAudio('13.北极熊.wav')">13. 北极熊</li>
-            <li onclick="playAudio('14.暴风雪.wav')">14. 暴风雪</li>
-            <li onclick="playAudio('15.火山爆发.wav')">15. 火山爆发</li>
-            <li onclick="playAudio('16.赤颈鸭.wav')">16. 赤颈鸭</li>
-            <li onclick="playAudio('17.海鸥.wav')">17. 海鸥</li>
-            <li onclick="playAudio('18.海象.wav')">18. 海象</li>
-            <li onclick="playAudio('19.碎冰.wav')">19. 碎冰</li>
-            <li onclick="playAudio('20.绵羊.wav')">20. 绵羊</li>
-            <li onclick="playAudio('21.野马.wav')">21. 野马</li>
-            <li onclick="playAudio('22.一群北极海鹦.wav')">22. 一群北极海鹦</li>
-            <li onclick="playAudio('23.山谷.wav')">23. 山谷</li>
+            <li class="audio-item">
+                <p>01.北冰洋</p>
+                <button onclick="playAudio(this, '01.北冰洋.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="01.北冰洋.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>02.北极海鹦</p>
+                <button onclick="playAudio(this, '02.北极海鹦.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="02.北极海鹦.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>03.海豹</p>
+                <button onclick="playAudio(this, '03.海豹.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="03.海豹.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>04.企鹅</p>
+                <button onclick="playAudio(this, '04.企鹅.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="04.企鹅.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>05.北极狐</p>
+                <button onclick="playAudio(this, '05.北极狐.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="05.北极狐.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>06.驯鹿</p>
+                <button onclick="playAudio(this, '06.驯鹿.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="06.驯鹿.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>07.风</p>
+                <button onclick="playAudio(this, '07.风.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="07.风.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>08.瀑布</p>
+                <button onclick="playAudio(this, '08.瀑布.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="08.瀑布.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>09.雪鸮</p>
+                <button onclick="playAudio(this, '09.雪鸮.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="09.雪鸮.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>10.北极狐的呼唤</p>
+                <button onclick="playAudio(this, '10.北极狐的呼唤.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="10.北极狐的呼唤.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>11.崩塌</p>
+                <button onclick="playAudio(this, '11.崩塌.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="11.崩塌.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>12.独角鲸</p>
+                <button onclick="playAudio(this, '12.独角鲸.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="12.独角鲸.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>13.北极熊</p>
+                <button onclick="playAudio(this, '13.北极熊.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="13.北极熊.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>14.暴风雪</p>
+                <button onclick="playAudio(this, '14.暴风雪.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="14.暴风雪.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>15.火山爆发</p>
+                <button onclick="playAudio(this, '15.火山爆发.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="15.火山爆发.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>16.赤颈鸭</p>
+                <button onclick="playAudio(this, '16.赤颈鸭.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="16.赤颈鸭.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>17.海鸥</p>
+                <button onclick="playAudio(this, '17.海鸥.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="17.海鸥.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>18.海象</p>
+                <button onclick="playAudio(this, '18.海象.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="18.海象.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>19.碎冰</p>
+                <button onclick="playAudio(this, '19.碎冰.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="19.碎冰.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>20.绵羊</p>
+                <button onclick="playAudio(this, '20.绵羊.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="20.绵羊.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>21.野马</p>
+                <button onclick="playAudio(this, '21.野马.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="21.野马.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>22.一群北极海鹦</p>
+                <button onclick="playAudio(this, '22.一群北极海鹦.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="22.一群北极海鹦.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
+            <li class="audio-item">
+                <p>23.山谷</p>
+                <button onclick="playAudio(this, '23.山谷.wav')">播放</button>
+                <audio controls class="audio-player">
+                    <source src="23.山谷.wav" type="audio/wav">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </li>
         </ul>
-        <audio class="audio-player" controls>
-            <source id="audioSource" src="" type="audio/wav">
-            您的浏览器不支持音频播放。
-        </audio>
     </div>
     <script>
-        function playAudio(src) {
-            var audio = document.querySelector('.audio-player');
-            var source = document.getElementById('audioSource');
-            source.src = src;
-            audio.load();
-            audio.play();
+        function playAudio(button, src) {
+            const audioPlayer = button.nextElementSibling;
+            audioPlayer.src = src;
+            audioPlayer.style.display = 'block';
+            audioPlayer.play();
         }
     </script>
 </body>
